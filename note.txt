@@ -3,6 +3,7 @@ conda create -n textS python=3.8 -y
 
 
 conda activate textS
+conda deactivate
 
 /usr/local/opt/python@3.8/bin/python3.8 -m pip install --upgrade pip
 
