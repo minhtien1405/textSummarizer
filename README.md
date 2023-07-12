@@ -14,3 +14,10 @@ Finetune HuggingFace model, CICD deploy this project to AWS
 8. Update the app.py
 
 delete artifacts/ and run main.py
+
+
+1. Data Ingestion:
+    Downloading the data/ unziped/ preparing data
+
+2. Data Validations:
+    Giving data to your model, you have to verity whether those data files are correct or not.
