@@ -1,7 +1,6 @@
 # Text Summarizer
 Finetune HuggingFace model, CICD deploy this project to AWS
 
-
 ## WorkFlows:
 
 1. Update config.yaml file
@@ -120,7 +119,7 @@ Now, open up you local host and port
 ## 3. Create ECR (Elastic Container Registry) repo to store/save docker image
     - Save the URI: 012047122186.dkr.ecr.us-east-1.amazonaws.com/text-s
 	
-## 4. Create EC2 machine (Ubuntu) 
+## 4. Create EC2 machine (Ubuntu) (launch virtual service in aws)
 
 ## 5. Open EC2 and Install docker in EC2 Machine:
 	
@@ -142,17 +141,22 @@ Now, open up you local host and port
 	newgrp docker
 	
 # 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
+    in Github: 
+      setting>actions>runner>new self hosted runner> choose os> then run command one by one in AWS EC2 Machine
 
+    Then setting>secret and variables>actions create secrets keys as below
 
-# 7. Setup github secrets:
+# 7. Setup github secrets: created in Github
 
-    AWS_ACCESS_KEY_ID=
+    AWS_ACCESS_KEY_ID= 
 
     AWS_SECRET_ACCESS_KEY=
 
     AWS_REGION = us-east-1
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = 012047122186.dkr.ecr.us-east-1.amazonaws.com/text-s
 
-    ECR_REPOSITORY_NAME = simple-app
+    ECR_REPOSITORY_NAME = text-s
+
+
+Special thanks to this tutorial: https://www.youtube.com/watch?v=p7V4Aa7qEpw&t=7917s&ab_channel=KrishNaik
