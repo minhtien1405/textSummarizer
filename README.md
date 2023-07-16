@@ -21,3 +21,6 @@ delete artifacts/ and run main.py
 
 2. Data Validations:
     Giving data to your model, you have to verity whether those data files are correct or not.
+
+3. Data Transformations:
+    First, data as text file need to be tokenized to become feature.
