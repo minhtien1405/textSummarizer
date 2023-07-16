@@ -154,7 +154,7 @@ Now, open up you local host and port
 
     AWS_REGION = us-east-1
 
-    AWS_ECR_LOGIN_URI = 012047122186.dkr.ecr.us-east-1.amazonaws.com/text-s
+    AWS_ECR_LOGIN_URI = 012047122186.dkr.ecr.us-east-1.amazonaws.com
 
     ECR_REPOSITORY_NAME = text-s
 
