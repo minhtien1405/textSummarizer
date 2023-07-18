@@ -49,9 +49,6 @@ delete artifacts/ and run main.py
 
 Clone the repository
 
-```bash
-https://github.com/entbappy/End-to-end-Text-Summarization
-```
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
