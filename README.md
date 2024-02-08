@@ -57,6 +57,8 @@ conda create -n summary python=3.8 -y
 
 ```bash
 conda activate summary
+pip install --upgrade accelerate
+
 ```
 
 
